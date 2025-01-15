@@ -1,0 +1,56 @@
+<!-- <nav class="navbar navbar-expand-md border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><i class="fa-solid fa-compass"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/teamprojectt">Explore</a>
+        <a class="nav-link" href="/teamproject/practice">Problem</a>
+        <a class="nav-link" href="">Contest Easy</a>
+        <a class="nav-link" href="">Contest Medium</a>
+        <a class="nav-link" href="">Team Contest</a>
+      </div>
+    </div>
+  </div>
+</nav> -->
+<nav class="navbar navbar-expand-md border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><i class="fa-solid fa-compass"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Menu -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/teamprojectt">Explore</a>
+        <a class="nav-link" href="/teamproject/practice">Problem</a>
+        <a class="nav-link" href="#">Contest Easy</a>
+        <a class="nav-link" href="#">Contest Medium</a>
+        <a class="nav-link" href="#">Team Contest</a>
+      </div>
+    </div>
+
+    <!-- Profile Icon Dropdown -->
+    <div class="navbar-nav ms-auto d-flex align-items-center">
+      <div class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+          <% if (user) { %>
+            <li><a class="dropdown-item" href="/profile">Profile</a></li>
+            <li><a class="dropdown-item text-danger" href="/logout">Logout</a></li>
+          <% } else { %>
+            <li><a class="dropdown-item" href="/login">Login</a></li>
+            <li><a class="dropdown-item" href="/signup">Sign Up</a></li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
